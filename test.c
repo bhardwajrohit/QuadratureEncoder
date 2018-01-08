@@ -16,7 +16,7 @@ HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
 return;
 }
 
-ADD_CMD("gpio",gpioinit,"             initalize GPIO Pin")
+ADD_CMD("gpioinit",gpioinit,"             initalize GPIO Pin")
 
 void gpio(int mode)
 {
@@ -110,7 +110,6 @@ break;
 }
 }
 
-ADD_CMD("gpioinit",gpioinit,"             initalize GPIO Pin");
 ADD_CMD("gpio",gpio,"             Glow the led")
 
 
